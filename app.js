@@ -37,33 +37,25 @@ const Body = () =>{
                 <button className="search-button" onClick={{}}><img className="search-logo" src={serachIcon}></img></button>
             </div>
             <div className="res-container">
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
-                <ResturantCard/>
+                <ResturantCard resName="Golbari" delivery="1hr" price="200"/>
+                <ResturantCard resName="Bhojohorimanna" delivery="30 Mins" price="300"/>
+                <ResturantCard resName="Ahare Bengali" delivery="1.5hr" price="150"/>
+                <ResturantCard resName="Bhuter Raja dilo bor" delivery="1hr" price="200"/>
             </div>
         </div>
     );
 }
 
-const ResturantCard = () =>{
+const ResturantCard = (props) =>{
 
     return (
         <div className="res-card">
             <img className="res-imamge" src={restaurantImage} alt = "resturant image"/>
-            <h4>Golbari</h4>
+            <h4>{props.resName}</h4>
             <div className="card-rating">⭐⭐⭐</div>
             <div className="card-inner">
-            <span>Delivery Time</span>
-            <span>Price</span>
+            <span>{props.delivery}</span>
+            <span>{props.price}</span>
             </div>
         </div>
     );
