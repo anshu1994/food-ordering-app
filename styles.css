@@ -112,3 +112,8 @@ body{
 .res-social > ul{
     list-style-type: none;
 }
+
+.filter-button{
+    margin-left:10px;
+    background-color: rgb(231, 231, 239);
+}
