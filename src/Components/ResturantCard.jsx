@@ -1,5 +1,6 @@
 import "../../styles.css"
 import {resImageURL} from "../utils/consts"
+import { useEffect } from "react";
 
 export const ResturantCard = (props) => {
   const { resObj } = props;
