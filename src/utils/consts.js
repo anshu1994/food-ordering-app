@@ -1885,3 +1885,4 @@ export let resList = [
 
 export const headerLogoURL = "https://png.pngtree.com/png-clipart/20241007/original/pngtree-free-food-delivery-logo-template-png-image_16223989.png"
 export const resImageURL ="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
+export const resURL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.6250187&lng=88.4434169&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"

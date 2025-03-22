@@ -3,10 +3,11 @@ import {resImageURL} from "../utils/consts"
 import { useEffect } from "react";
 
 export const ResturantCard = (props) => {
+  console.log("this is props",props)
   const { resObj } = props;
 
   const { avgRating, cloudinaryImageId, costForTwo, deliveryTime, name } =
-    resObj.data;
+    resObj?.info;
 
   return (
     <div className="res-card">
@@ -20,7 +21,7 @@ export const ResturantCard = (props) => {
         <div className="card-rating">⭐{avgRating}</div>
         <div className="card-inner">
           <span>Delivery time {deliveryTime} Mins</span>
-          <span>Price for TWO {costForTwo / 100} Rs</span>
+          <span>Price for TWO {costForTwo} Rs</span>
         </div>
       </div>
     </div>
